@@ -1,0 +1,26 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba1 100%); min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 20px; }
+#game { background: white; border-radius: 20px; padding: 30px; max-width: 500px; width: 100%; box-shadow: 0 10px 40px rgba(0,0,0,0.3); }
+#start, #game-screen { text-align: center; }
+h1 { font-size: 32px; margin-bottom: 10px; }
+.subtitle { color: #666; margin-bottom: 20px; }
+.desc { font-size: 13px; color: #999; margin: 20px 0; line-height: 1.6; }
+#start-btn, #work-btn, #restart-btn { padding: 15px 50px; font-size: 20px; background: #2ecc71; color: white; border: none; border-radius: 10px; cursor: pointer; margin-top: 20px; }
+#start-btn:hover, #workbtn:hover, #restart-btn:hover { background: #27ae60; }
+#header { display: flex; justify-content: space-between; margin-bottom: 20px; padding: 15px; background: #f0f0f0; border-radius: 10px; font-size: 18px; }
+#timer { color: #e74c3c; font-weight: bold; }
+#board { position: relative; height: 300px; background: #f9f9f9; border: 2px solid #ddd; border-radius: 10px; margin-bottom: 20px; overflow: hidden; }
+.item { position: absolute; width: 50px; height: 50px; border-radius: 8px; cursor: pointer; display: flex; justify-content: center; align-items: center; font-size: 26px; user-select: none; transition: transform 0.1s; }
+.item:active { transform: scale(0.9); }
+#slots { display: flex; justify-content: center; gap: 8px; padding: 15px; background: #333; border-radius: 10px; }
+.slot { width: 50px; height: 50px; background: #555; border: 2px solid #777; border-radius: 8px; display: flex; justify-content: center; align-items: center; font-size: 26px; }
+#boss-alert { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #e74c3c; color: white; padding: 40px; border-radius: 20px; font-size: 28px; font-weight: bold; display: none; z-index: 1000; text-align: center; }
+#game-over { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 40px; border-radius: 20px; text-align: center; display: none; z-index: 1000; box-shadow: 0 10px 40px rgba(0,0,0,0.3); }
+#game-over h2 { color: #e74c3c; margin-bottom: 15px; font-size: 28px; }
+#fail-reason { color: #666; margin-bottom: 20px; font-size: 16px; }
+.t0 { background: #bdc3c7; }
+.t1 { background: #8b4513; }
+.d2 { background: #6495ed; }
+.t3 { background: #2c3e50; color: white; }
+.´4 { background: #f4d03f; }
+.t5 { background: #27ae60; }
